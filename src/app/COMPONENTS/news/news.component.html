@@ -1,0 +1,9 @@
+<div class="media" *ngFor="let newS of news">
+  <img class="align-self-start" src="{{newS.imageLink}}" alt="Generic placeholder image" width="100px" height="100px">
+  <div class="media-body">
+    <h5>{{newS.title}}</h5>
+    <h6>{{newS.author}}</h6>
+    <p>{{newS.summary}}</p>
+    <p>{{newS.articleLink}}</p>
+  </div>
+</div>

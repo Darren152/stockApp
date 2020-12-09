@@ -1,0 +1,32 @@
+<div class="container">
+  <table class="table table-striped table-dark" >
+    <thead>
+    <tr>
+      <th scope="col">Symbol</th>
+      <th scope="col">Exchange</th>
+      <th scope="col">Open</th>
+      <th scope="col">Close</th>
+      <th scope="col">Volume</th>
+      <th scope="col">Date</th>
+      <th scope="col">Last</th>
+      <th scope="col">High</th>
+      <th scope="col">Low</th>
+      <th scope="col">Currencies</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="clickable" *ngFor="let stock of stocks" [routerLink]="['/chart/'+ stock.symbol]" >
+      <th scope="row">{{stock.symbol}}</th>
+      <td>{{stock.exchange}}</td>
+      <td>{{stock.open}}</td>
+      <td>{{stock.close}}</td>
+      <td>{{stock.volume}}</td>
+      <td>{{stock.date}}</td>
+      <td>{{stock.last}}</td>
+      <td>{{stock.high}}</td>
+      <td>{{stock.low}}</td>
+      <td>{{stock.name}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
